@@ -1,0 +1,79 @@
+.hero {
+  padding-top: 5rem;
+
+  @include breakpoint-up(large) {
+    display: flex;
+  }
+
+  &__image {
+    background-image: url("/images/hero-img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 28.125rem;
+    height: clamp(28.125rem, 7.304885786802032rem + 88.83248730964466vw, 50rem);
+    max-width: 43.75rem;
+    margin: auto;
+
+    @include breakpoint-up(large) {
+      flex: 1;
+      order: 2;
+      margin-right: 4rem;
+    }
+  }
+
+  &__type {
+    text-decoration: underline;
+    font-style: italic;
+  }
+
+  &__text {
+    text-align: center;
+    clear: right;
+    z-index: -100;
+    
+    p {
+      font-family: "Playfair Display", serif;
+      font-size: 1.2rem;
+      font-size: clamp(1.2rem, 0.9144670050761421rem + 1.218274111675127vw, 1.5rem);
+      margin: 0;
+
+      @include breakpoint-down(medium) {
+        &:not(:last-child) {
+          padding-top: 2rem;
+        }
+
+        &:not(:first-child) {
+          padding-bottom: 2rem;
+        }
+      }
+    }
+
+    h1 {
+      padding-top: 0;
+      margin: 0;
+      font-family: "DM Serif Display", serif;
+      font-size: 3rem;
+      font-size: clamp(3rem, 1.0964467005076144rem + 8.121827411167512vw, 5rem);
+      text-align: center;
+    }
+
+    @include breakpoint-up(large) {
+      flex: 1;
+      order: 1;
+      height: inherit;
+      margin: auto;
+      text-align: left;
+
+      padding-left: 2rem;
+      padding-left: clamp(2rem, -3.2347715736040605rem + 22.335025380710658vw, 7.5rem);
+
+      p {
+        padding-bottom: 0;
+      }
+      h1 {
+        text-align: left;
+      }
+    }
+  }
+}
