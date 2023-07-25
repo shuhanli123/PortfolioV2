@@ -29,7 +29,6 @@
         <li><a href="#about" class="link">About</a></li>
         <li><a href="#projects" class="link">Projects</a></li>
         <li><a href="#awards" class="link">Awards and Honors</a></li>
-        <li><a href="#contact" class="link">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -209,21 +208,21 @@
 
   <section id="contact" class="contact">
     <h1>Contact</h1>
-    <form onsubmit="event.preventDefault(); validateForm()" netlify>
+    <form name="contact" method="POST" data-netlify="true" onsubmit="event.preventDefault(); validateForm(); submit">
       <label for="name">*Name</label>
-      <input type="text" id="name">
+      <input type="text" id="name" name="name">
       <small class="error"></small>
 
       <label for="email">*Email</label>
-      <input type="text" id="email">
+      <input type="text" id="email" name="email">
       <small class="error"></small>
 
       <label for="subject">*Subject</label>
-      <input type="text" id="subject">
+      <input type="text" id="subject" name="subject">
       <small class="error"></small>
 
       <label for="message">*Message</label>
-      <textarea id="message"></textarea>
+      <textarea id="message" name="message"></textarea>
       <small class="error"></small>
 
       <div>
@@ -259,7 +258,6 @@
 
       <div class="footer__links col2">
         <a href="#awards">Awards and Honors</a>
-        <a href="#contact">Contact</a>
       </div>
       
       <div class="footer__copyright">
