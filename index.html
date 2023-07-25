@@ -209,7 +209,7 @@
 
   <section id="contact" class="contact">
     <h1>Contact</h1>
-    <form name="contact" method="POST" onsubmit="event.preventDefault(); validateForm(); clearInput()" netlify>
+    <form method="POST" action="/app/php/send-email.php" onsubmit="event.preventDefault(); validateForm(); clearInput()">
       <label for="name">*Name</label>
       <input type="text" id="name" name="name">
       <small class="error"></small>
