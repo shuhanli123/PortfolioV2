@@ -42,6 +42,10 @@
       max-width: calc(100% - 5rem);
       border: 1px $darkbrown solid;
       height: 265px;
+
+      @include breakpoint-up(large) {
+        width: 17.0625rem;
+      }
     }
 
     h3 {
