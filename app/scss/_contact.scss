@@ -1,0 +1,107 @@
+.contact {
+  background-image: url("/images/contact-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: $brown;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+
+  @include breakpoint-down(medium) {
+    background-image: url("/images/contact-bg-mobile.png");
+  }
+
+  h1 {
+    color: $darkbeige;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 0.7rem;
+  }
+
+  form {
+    max-width: calc(100% - 5rem);
+    background: $beige;
+    margin: 0 auto 0 auto;
+    padding: 2.5rem;
+    border-radius: 10px;
+    color: $brown;
+
+    @include breakpoint-up(large) {
+      width: 40%;
+    }
+  }
+
+  label {
+    display: block;
+    margin: 20px 0;
+  }
+
+  input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 3px solid $brown;
+    background-color: transparent;
+
+    transition: all 300ms ease-in-out;
+
+    &.error-border {
+      border-bottom: 3px solid red;
+    }
+  }
+
+  input[type=text]:focus, textarea:focus {
+    border-bottom: 3px solid $darkbrown;
+  }
+
+  textarea::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  textarea::-webkit-scrollbar-thumb {
+    background-color: $brown;
+  }
+
+  &__btn {
+    background-color: $darkbrown;
+    border: none;
+    border-radius: 30px;
+    color: $beige;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 0.75rem 1.125rem;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+    width: 100%;
+    margin-top: 1rem;
+    transition: all 300ms ease-in-out;
+  }
+
+  &__btn:hover {
+    background-color: $brown;
+  }
+
+  &__warning {
+    padding-left: 2rem;
+    padding-top: 2rem;
+  }
+
+}
+
+.error {
+  color: red;
+}
+
+#success {
+  color: #28a745;
+}
