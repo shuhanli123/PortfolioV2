@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/app/scss/style.css">
+
+  <script src="https://kit.fontawesome.com/319a243848.js" crossorigin="anonymous"></script>
+
+  <title>Shuhan Li</title>
+</head>
+<body>
+  <header id="home" class="header sticky">
+    <nav class="flex flex-jc-sb flex-ai-c">
+      <a href="/" class="header__logo">shuhan.</a>
+
+      <a aria-controls="primary-navigation" aria-expanded="false" href="##" class="header__toggle" id="btnHamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+
+      <ul class="primary-navigation flex" id="primary-navigation" data-visible="false">
+        <li><a href="#home" class="link">Home</a></li>
+        <li><a href="#about" class="link">About</a></li>
+        <li><a href="#projects" class="link">Projects</a></li>
+        <li><a href="#awards" class="link">Awards and Honors</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero__image"></div>
+    <div class="hero__text">
+      <p>Hey there,</p>
+      <h1>I'm Shuhan</h1>
+      <p>a passionate, rising <span class="auto-input hero__type"></span></p>
+    </div>
+  </section>
+  
+  <section id="about"> 
+    <h1 class="about">About Me</h1> 
+    <div class="about__content">
+      <div class="about__image"></div>
+      <div class="about__text">
+        <p>
+          Meet Shuhan, a dedicated sophomore in high school with a passion for <span class="underline">computer science</span>, 
+          particularly web and app development, and <span class="underline">business</span>. <br><br>
+
+          As an active DECA member, 
+          she established a DECA chapter during her sophomore year. <br><br>
+
+          Additionally, she achieved notable victories in impromptu speaking 
+          and public forum tournaments as a member of speech and debate during her freshman year. <br><br>
+
+          In her free time, Shuhan plays the piano and enjoys songwriting. 
+          She looks forward further growth and accomplishments on her high school journey.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h1>Projects</h1>
+    <div class="project__wrapper">
+      <div class="projects__grid">
+        <div class="projects__item">
+          <h3 class="projects__name">Personal portfolio v1</h3>
+          <img src="/images/projects/portfolio 1 project.png" alt="Image of the first version of Shuhan's personal portfolio" class="project__image">
+          <p class="projects__tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+          </p>
+          <div class="projects__links">
+            <a href="https://shuhanliportfolio1.netlify.app/" target="_blank" class="projects__hover">View Project</a>
+            <a href="https://github.com/shuhanli123/Portfolio" target="_blank" class="projects__hover">View Code</a>
+          </div>
+        </div>
+
+        <div class="projects__item">
+          <h3 class="projects__name">Product preview card component</h3>
+          <img src="/images/projects/perfume project.png" alt="Image of a project about a perfume card" class="projects__item__border project__image">
+          <p class="projects__tags">
+            <span>HTML</span>
+            <span>CSS</span>
+          </p>
+          <div class="projects__links">
+            <a href="https://shuhanfrontendmentorproductcard.netlify.app/" target="_blank" class="projects__hover">View Project</a>
+            <a href="https://github.com/shuhanli123/Frontend-Mentor-Product-Preview-Card" target="_blank" class="projects__hover">View Code</a>
+          </div>
+        </div>
+
+        <div class="projects__item">
+          <h3 class="projects__name">FAQ accordian card</h3>
+          <img src="/images/projects/faq project.png" alt="Image of a project about an FAQ accordian card" class="project__image">
+          <p class="projects__tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+          </p>
+          <div class="projects__links">
+            <a href="https://shuhanfrontendmentoraccordion.netlify.app/" target="_blank" class="projects__hover">View Project</a>
+            <a href="https://github.com/shuhanli123/Frontend-Mentor-FAQ-Accordion" target="_blank" class="projects__hover">View Code</a>
+          </div>
+        </div>
+
+        <div class="projects__item">
+          <h3 class="projects__name">Personal portfolio v2</h3>
+          <img src="/images/projects/portfolio 2 project.png" alt="Image of Shuhan Li's current portfolio" class="projects__item__border project__image">
+          <p class="projects__tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+          </p>
+          <div class="projects__links">
+            <a href="https://www.shuhanli.com" target="_blank" class="projects__hover">View Project</a>
+            <a href="" target="_blank" class="projects__hover">View Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="awards" class="awards" id="blur">
+    <h1>Awards and Honors</h1>
+    <div class="awards__wrapper">
+      <div class="awards__grid">
+        <div class="awards__item">
+          <img src="/images/awards/DECA.png" alt="DECA glass">
+          <h3>DECA 2023 SCDC ASM Top 10 Finalist</h3>
+          <button class="awards__btn open-button" id="deca-open">Learn More</button>
+
+          <dialog class="awards__modal" id="deca-modal">
+            <h3>DECA 2023 SCDC ASM Top 10 Finalist</h3>
+            <p>
+              Each year, all states organize a <a href="https://oregondeca.org/conferences/scdc/" class="awards__link">State Career Development Conference (SCDC)</a> to serve as a qualifying event for the prestigious <a href="https://www.deca.org/conferences/icdc" class="awards__link">International Career Developmental Conference (ICDC)</a>. <br><br>
+
+              In 2023, during her freshman year, Shuhan Li took part in the Automotive Services Marketing Series event. 
+              Demonstrating her skills and dedication, she achieved the commendable position of a Top 10 Finalist at the SCDC.
+            </p>
+            <button class="awards__btn close-button" id="deca-close">Close</button>
+          </dialog>
+        </div>
+        <div class="awards__item">
+          <img src="/images/awards/Katy Taylor.png" alt="Flow from a public forum round">
+          <h3>Katy Taylor 2022 Public Forum Champion</h3>
+          <button class="awards__btn open-button" id="katy-open">Learn More</button>
+
+          <dialog class="awards__modal" id="katy-modal">
+            <h3>Katy Taylor 2022 Public Forum Champion</h3>
+            <p>
+              In 2022, during Shuhan Li's freshman year, she participated in the Public Forum debate at the Katy Taylor tournament in the novice division. 
+              <br><br>Alongside her partner <em>Pranjal Kaushal</em>, they achieved a 9-2 record throughout the tournament. 
+              In the finals, they secured a victory with a 3-0 vote.</p>
+            <button class="awards__btn close-button" id="katy-close">Close</button>
+          </dialog>
+        </div>
+        <div class="awards__item">
+          <img src="/images/awards/Ida B Wells.png" alt="Shuhan Li in-round">
+          <h3>Ida B Wells 2022 Public Forum Co-Champion</h3>
+          <button class="awards__btn open-button" id="ida-open">Learn More</button>
+
+          <dialog class="awards__modal" id="ida-modal">
+            <h3>Ida B Wells 2022 Public Forum Co-Champion</h3>
+            <p>
+              In her second tournament of the season, Shuhan Li teamed up with <a href="https://www.rishabjaink.com/" class="awards__link">Rishab Jain</a> to compete in the Public Forum event at Ida B Wells High School.
+              <br><br>
+              Their skills and efforts led them to reach the semi-finals, an impressive achievement. 
+              However, a situation arose where all the other semi-finalists were from the same school. 
+              As a result, a decision was made to designate all the semi-finalists as co-champions.
+              <br><br>
+              Throughout the tournament, Shuhan and Rishab displayed a strong performance, securing a perfect record of 3-0.
+            </p>
+            <button class="awards__btn close-button" id="ida-close">Close</button>
+          </dialog>
+        </div>
+        <div class="awards__item">
+          <img src="/images/awards/Oregon City.png" alt="Picture of a computer in a speech and debate round">
+          <h3>Oregon City 2023 Impromptu Top 5 Finalist</h3>
+          <button class="awards__btn open-button" id="oc-open">Learn More</button>
+
+          <dialog class="awards__modal" id="oc-modal">
+            <h3>Oregon City 2023 Impromptu Top 5 Finalist</h3>
+            <p>Shuhan Li competed in her first Impromptu competition in the open (varsity) division against 70 participants. 
+              She emerged as a top 5 finalist, earning an alternative qualification for the OSAA states.</p>
+            <button class="awards__btn close-button" id="oc-close">Close</button>
+          </dialog>
+        </div>
+        <div class="awards__item">
+          <img src="/images/awards/osaa.jpeg" alt="OSAA States">
+          <h3>OSAA 2022-23 Impromptu State Qualifier</h3>
+          <button class="awards__btn open-button" id="osaa-open">Learn More</button>
+
+          <dialog class="awards__modal" id="osaa-modal">
+            <h3>OSAA 2022-23 Impromptu State Qualifier</h3>
+            <p>Shuhan Li successfully qualified for the OSAA (Oregon School Activities Association) states in Impromptu.</p>
+            <button class="awards__btn close-button" id="osaa-close">Close</button>
+          </dialog>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h1>Contact</h1>
+    <form name="contact" method="POST" data-netlify="true" onsubmit="event.preventDefault(); validateForm()">
+      <label for="name">*Name</label>
+      <input type="text" id="name">
+      <small class="error"></small>
+
+      <label for="email">*Email</label>
+      <input type="text" id="email">
+      <small class="error"></small>
+
+      <label for="subject">*Subject</label>
+      <input type="text" id="subject">
+      <small class="error"></small>
+
+      <label for="message">*Message</label>
+      <textarea id="message"></textarea>
+      <small class="error"></small>
+
+      <div>
+        <button type="submit" class="contact__btn">Send</button>
+        <p id="success"></p>
+      </div>
+    </form>
+
+    <p class="contact__warning">*Fields marked with an asterisk (*) are required.</p>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <a href="#" class="footer__logo">shuhan.</a>
+
+      <div class="footer__social">
+        <a href="https://github.com/shuhanli123" target="_blank">
+          <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px"><title>Github</title><path d="M10.9,2.1c-4.6,0.5-8.3,4.2-8.8,8.7c-0.5,4.7,2.2,8.9,6.3,10.5C8.7,21.4,9,21.2,9,20.8v-1.6c0,0-0.4,0.1-0.9,0.1 c-1.4,0-2-1.2-2.1-1.9c-0.1-0.4-0.3-0.7-0.6-1C5.1,16.3,5,16.3,5,16.2C5,16,5.3,16,5.4,16c0.6,0,1.1,0.7,1.3,1c0.5,0.8,1.1,1,1.4,1 c0.4,0,0.7-0.1,0.9-0.2c0.1-0.7,0.4-1.4,1-1.8c-2.3-0.5-4-1.8-4-4c0-1.1,0.5-2.2,1.2-3C7.1,8.8,7,8.3,7,7.6c0-0.4,0-0.9,0.2-1.3 C7.2,6.1,7.4,6,7.5,6c0,0,0.1,0,0.1,0C8.1,6.1,9.1,6.4,10,7.3C10.6,7.1,11.3,7,12,7s1.4,0.1,2,0.3c0.9-0.9,2-1.2,2.5-1.3 c0,0,0.1,0,0.1,0c0.2,0,0.3,0.1,0.4,0.3C17,6.7,17,7.2,17,7.6c0,0.8-0.1,1.2-0.2,1.4c0.7,0.8,1.2,1.8,1.2,3c0,2.2-1.7,3.5-4,4 c0.6,0.5,1,1.4,1,2.3v2.6c0,0.3,0.3,0.6,0.7,0.5c3.7-1.5,6.3-5.1,6.3-9.3C22,6.1,16.9,1.4,10.9,2.1z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/shuhan_.li/" target="_blank">
+          <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px"><title>Instagram</title><path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@shuhanli" target="_blank">
+          <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px"><title>YouTube</title><path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,14.598V9.402c0-0.385,0.417-0.625,0.75-0.433l4.5,2.598c0.333,0.192,0.333,0.674,0,0.866l-4.5,2.598 C10.417,15.224,10,14.983,10,14.598z"/></svg>
+        </a>
+      </div>
+
+      <div class="footer__links col1">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+      </div>
+
+      <div class="footer__links col2">
+        <a href="#awards">Awards and Honors</a>
+      </div>
+      
+      <div class="footer__copyright">
+        <div></div>
+        &copy; 2023 copyright all rights reserved
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="/app/js/script.js"></script>
+</body>
+</html>
